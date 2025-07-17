@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular Turismo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Licenciatura en Turismo</h1>
+  <div class="grid">
+
+    <!-- Semestre I -->
+    <div class="semester">
+      <h2>Semestre I</h2>
+      <div class="course" data-id="des_hum">Desarrollo humano</div>
+      <div class="course" data-id="des_hab">Desarrollo de habilidades...</div>
+      <div class="course" data-id="tic">TIC aplicadas al turismo</div>
+      <div class="course" data-id="fund_mat">Fund. matemáticos admón</div>
+      <div class="course" data-id="fund_tur">Fundamentos del turismo</div>
+      <div class="course" data-id="civ_mex">Civilizaciones de México</div>
+      <div class="course" data-id="civ_mun">Civilizaciones del mundo</div>
+    </div>
+
+    <!-- Semestre II -->
+    <div class="semester">
+      <h2>Semestre II</h2>
+      <div class="course locked" data-id="com_oral" data-prereq="des_hab">Comunicación oral y escrita</div>
+      <div class="course locked" data-id="estadistica" data-prereq="fund_mat">Estadística y probabilidad</div>
+      <div class="course locked" data-id="regiones" data-prereq="fund_tur">Regiones turísticas del mundo</div>
+      <div class="course locked">Sociedad y cultura de México moderno</div>
+      <div class="course locked" data-id="hospitalidad" data-prereq="fund_tur">Industria de la hospitalidad</div>
+      <div class="course locked">Empresas de viaje</div>
+      <div class="course locked">Gestión de alimentos y bebidas</div>
+      <div class="course locked" data-id="planificacion" data-prereq="fund_tur">Planificación turística</div>
+    </div>
+
+    <!-- Semestre III -->
+    <div class="semester">
+      <h2>Semestre III</h2>
+      <div class="course locked" data-id="mkt" data-prereq="fund_tur">Admón y fund. de mercadotecnia</div>
+      <div class="course locked" data-id="eco" data-prereq="fund_mat">Economía</div>
+      <div class="course locked">Epistemología de la ciencia</div>
+      <div class="course locked" data-id="analisis_cuant" data-prereq="estadistica">Análisis cuantitativo turístico</div>
+      <div class="course locked" data-id="medio_amb" data-prereq="planificacion">Turismo y medio ambiente</div>
+      <div class="course locked" data-id="destinos_mun" data-prereq="regiones">Destinos turísticos del mundo</div>
+      <div class="course locked" data-id="destinos_mex" data-prereq="regiones">Destinos turísticos de México</div>
+    </div>
+
+    <!-- Semestre IV -->
+    <div class="semester">
+      <h2>Semestre IV</h2>
+      <div class="course locked" data-id="cap_hum" data-prereq="des_hum">Admón del capital humano</div>
+      <div class="course locked" data-id="microeco" data-prereq="eco">Microeconomía</div>
+      <div class="course locked">Métodos cualitativos en ciencias sociales</div>
+      <div class="course locked" data-id="prog_lineal" data-prereq="analisis_cuant">Modelos de programación lineal</div>
+      <div class="course locked" data-id="teo_tur" data-prereq="fund_tur">Teoría del turismo</div>
+      <div class="course locked">Optativa I</div>
+      <div class="course locked">Optativa II</div>
+    </div>
+
+    <!-- Semestre V -->
+    <div class="semester">
+      <h2>Semestre V</h2>
+      <div class="course locked" data-prereq="mkt">Investigación de mercados turísticos</div>
+      <div class="course locked" data-id="dir_emp" data-prereq="cap_hum">Formación directiva y empresarial</div>
+      <div class="course locked" data-id="conta_fin">Contabilidad financiera</div>
+      <div class="course locked" data-id="macroeco" data-prereq="microeco">Macroeconomía</div>
+      <div class="course locked" data-prereq="prog_lineal">Métodos cuantitativos para la administración</div>
+      <div class="course locked">Optativa III</div>
+      <div class="course locked">Optativa IV</div>
+    </div>
+
+    <!-- Semestre VI -->
+    <div class="semester">
+      <h2>Semestre VI</h2>
+      <div class="course locked">Comercialización de productos turísticos</div>
+      <div class="course locked" data-prereq="dir_emp">Administración estratégica</div>
+      <div class="course locked">Contabilidad aplicada a empresas turísticas</div>
+      <div class="course locked">Marco jurídico del individuo</div>
+      <div class="course locked">Comercio internacional</div>
+      <div class="course locked">Optativa V</div>
+      <div class="course locked">Optativa VI</div>
+    </div>
+
+    <!-- Semestre VII -->
+    <div class="semester">
+      <h2>Semestre VII</h2>
+      <div class="course locked">Plan de marketing</div>
+      <div class="course locked">Gestión de la calidad</div>
+      <div class="course locked">Análisis de estados financieros</div>
+      <div class="course locked">Marco legal de la organización</div>
+      <div class="course locked">Diseño de productos turísticos alternativos</div>
+      <div class="course locked">Proyecto terminal I</div>
+      <div class="course locked">Optativa VII</div>
+    </div>
+
+    <!-- Semestre VIII -->
+    <div class="semester">
+      <h2>Semestre VIII</h2>
+      <div class="course locked">Innovación en empresas turísticas</div>
+      <div class="course locked">Administración financiera</div>
+      <div class="course locked">Marco legal turístico</div>
+      <div class="course locked">Proyecto terminal II</div>
+      <div class="course locked">Sistemas de gestión ambiental</div>
+      <div class="course locked">Marketing digital</div>
+      <div class="course locked">Desarrollo organizacional</div>
+      <div class="course locked">Electiva</div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
